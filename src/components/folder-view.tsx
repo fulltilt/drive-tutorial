@@ -36,6 +36,7 @@ export default function FolderView({ folderId }: { folderId: string }) {
     { id: folderId, name: mockData[folderId as keyof typeof mockData].name },
   ]);
 
+  // @ts-ignore
   const currentFolder =
     mockData[folderPath[folderPath.length - 1].id as keyof typeof mockData];
 
